@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:padding="10dp"
+    android:background="@drawable/shape_mylove">
+    <ImageView
+        android:id="@+id/iv_toast_love"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_love_hover"
+        android:tint="?attr/image_tint"/>
+    <TextView
+        android:id="@+id/tv_toast_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textSize="@dimen/dp_16"
+        android:textColor="@color/colorLightGray"
+        android:text="@string/add_love_succeed"/>
+</LinearLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlMusicListItem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/appbg"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/vPlaying"
+        android:layout_width="@dimen/dp_3"
+        android:layout_height="@dimen/dp_50"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/dp_3"
+        android:background="@color/red"
+        android:contentDescription="@null"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/ivAlbum"
+        android:layout_width="@dimen/dp_50"
+        android:layout_height="@dimen/dp_50"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dp_5"
+        android:layout_toRightOf="@id/vPlaying"
+        android:scaleType="fitXY"
+        android:src="@drawable/default_cover" />
+
+    <TextView
+        android:id="@+id/tvSongname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_toRightOf="@id/ivAlbum"
+        android:ellipsize="end"
+        android:maxEms="@integer/i_12"
+        android:maxLines="@integer/i_1"
+        android:textSize="@dimen/sp_15" />
+
+    <TextView
+        android:id="@+id/tvSinger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvSongname"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:layout_toRightOf="@id/ivAlbum"
+        android:ellipsize="end"
+        android:maxLines="@integer/i_1"
+        android:textColor="@color/grey500"
+        android:textSize="@dimen/sp_12"
+
+        />
+
+    <ImageView
+        android:id="@+id/ivMore"
+        android:layout_width="@dimen/dp_50"
+        android:layout_height="@dimen/dp_50"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/dp_10"
+        android:background="@drawable/music_list_more_bg_selector"
+        android:contentDescription="@null"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_music_list_icon_more" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_05"
+        android:background="@color/colorDividerGray" />
+</RelativeLayout>

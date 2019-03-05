@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="theme">
+        <attr name="appbg" format="reference"/>
+        <attr name="press_color" format="reference"/>
+        <attr name="play_bar_color" format="reference"/>
+        <attr name="accent_color" format="reference"/>
+        <attr name="divider" format="reference"/>
+        <attr name="image_tint" format="reference"/>
+        <attr name="my_selector_layout" format="reference"/>
+        <attr name="text_color" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="SwipeBackLayout">
+        <attr name="edge_size" format="dimension"/>
+        <attr name="edge_flag">
+            <enum name="left" value="0" />
+            <enum name="right" value="1" />
+            <enum name="bottom" value="2" />
+            <enum name="all" value="3" />
+        </attr>
+        <attr name="shadow_left" format="reference"/>
+        <attr name="shadow_right" format="reference"/>
+        <attr name="shadow_bottom" format="reference"/>
+    </declare-styleable>
+
+    <attr name="SwipeBackLayoutStyle" format="reference"/>
+</resources>

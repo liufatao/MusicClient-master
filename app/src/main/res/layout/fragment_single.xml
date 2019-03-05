@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/fragement_single"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/local_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:overScrollMode="never"
+        />
+    <me.wcy.music.widget.SideBar
+        android:id="@+id/local_music_siderbar"
+        android:layout_width="@dimen/dp_200"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:paddingTop="@dimen/dp_5"
+        android:paddingBottom="@dimen/dp_5"
+       />
+    <TextView
+        android:id="@+id/local_music_siderbar_pre_tv"
+        android:layout_width="@dimen/dp_80"
+        android:layout_height="@dimen/dp_80"
+        android:layout_centerInParent="true"
+        android:background="@drawable/shape_letter_pre"
+        android:visibility="gone"
+        android:gravity="center"
+        android:textColor="@color/grey700"
+        android:textSize="@dimen/sp_80"/>
+</RelativeLayout>
